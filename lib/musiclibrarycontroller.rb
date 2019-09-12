@@ -66,4 +66,8 @@ class MusicLibraryController
       count += 1 
     }
   end 
+  
+  def play_song
+    
+  end
 end
