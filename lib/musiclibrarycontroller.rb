@@ -30,7 +30,9 @@ class MusicLibraryController
   end 
   
   def list_artists
-    
+    count = 1
+    Artist.all.sort_by{|artist| artist.name}.each{|artist|
+      puts "#{count}. #{artist.name}"
   end 
   
   def list_genres
