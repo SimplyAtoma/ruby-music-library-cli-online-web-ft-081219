@@ -49,7 +49,7 @@ class MusicLibraryController
     count = 1
     puts "Please enter the name of an artist:"
     input = gets
-    artist_songs = Artist.find_by_name(input)
+    artist_songs = Artist.find_or_create_by_name(input)
     artist_songs.songs.sort_by{|song| song.name}.each{|song|
       puts "#{count}. #{song.name} - #{song.genre.name}"
       count += 1 
