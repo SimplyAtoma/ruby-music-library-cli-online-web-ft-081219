@@ -72,7 +72,7 @@ class MusicLibraryController
     input = gets
     list = Song.all.sort_by{|song| song.name}
     song = list[input.to_i]
-    if input.to_i < list.length
+    if input.to_i < list.length && input.to_i > 0
      puts "Playing #{song.name} by #{song.artist.name}"
    end 
   end
