@@ -17,8 +17,23 @@ class MusicLibraryController
     puts "What would you like to do?"
     input = " "
     while input != "exit"
-      if input == 
-        self.
+      if input == "list songs"
+        self.list_songs
+      end
+      if input == "list artists"
+        self.list_artists
+      end
+      if input == "list genres"
+        self.list_genres
+      end
+      if input == "list artist"
+        self.list_artist
+      end
+      if input == "list_genre"
+        self.list_genre
+      end
+      if input == "play song"
+        self.play_song
       end
       input = gets
     end 
