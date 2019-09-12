@@ -27,10 +27,10 @@ class MusicLibraryController
         self.list_genres
       end
       if input == "list artist"
-        self.list_artist
+        self.list_songs_by_artist
       end
       if input == "list_genre"
-        self.list_genre
+        self.list_songs_by_genre
       end
       if input == "play song"
         self.play_song
